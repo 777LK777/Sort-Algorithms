@@ -10,6 +10,30 @@ namespace SortAlgorithms
     {
         static void Main(string[] args)
         {
+            int[] MyArray = new int[]
+            {
+                5,
+                6,
+                8,
+                1,
+                2,
+                5,
+                9,
+                11,
+                15,
+                1,
+                4,
+                3,
+                2,
+                1
+            };
+
+            BubbleSort.Sort(MyArray);
+
+            foreach (int i in MyArray)
+                Console.Write(i + "\t");
+
+            Console.ReadKey();
         }
     }
 }
