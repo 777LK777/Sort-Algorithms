@@ -15,7 +15,7 @@ namespace SortAlgorithms
         /// </summary>
         /// <param name="Array">Сортируемый массив</param>
         /// <returns>Возвращает отсортированную последовательность</returns>
-        static public IEnumerable<int> Sort(int[] Array)
+        static public void Sort(int[] Array)
         {
             if (Array.Count() > 1)
             {
@@ -28,9 +28,7 @@ namespace SortAlgorithms
                     {
                         Reverse(ref Array[i - 1], ref Array[i]);
                     }
-                } while (WasReversed);               
-
-                return Array;
+                } while (WasReversed);
             }
             else
             {
