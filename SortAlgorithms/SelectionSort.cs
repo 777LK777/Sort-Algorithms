@@ -10,14 +10,23 @@ namespace SortAlgorithms
     {
         static public void Sort(int[] MyArray)
         {
+            int Index;
             for (int i = 0; i < MyArray.Length; i++)
-            {                
+            {
+                Index = -1;
+                int min = MyArray[i];
                 for (int a = i; a < MyArray.Length; a++)
-                {                                        
-                    if (MyArray[a] < MyArray[i])
+                {
+                    if (MyArray[a] < min)
                     {
-                        Reverse(ref MyArray[i], ref MyArray[a]);
-                    }                                          
+                        min = MyArray[a];
+                        Index = a;
+                    }
+                }
+                if (Index != -1)
+                {
+                    Console.WriteLine(MyArray[Index]);
+                    Reverse(ref MyArray[i], ref MyArray[Index]);
                 }
             }
         }        

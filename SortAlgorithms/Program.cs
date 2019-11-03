@@ -11,7 +11,7 @@ namespace SortAlgorithms
         static void Main(string[] args)
         {
             int[] MyArray = new int[]
-            {
+            {                
                 5,  //0
                 6,  //1
                 8,  //2
@@ -26,7 +26,8 @@ namespace SortAlgorithms
                 3,  //11
                 2,  //12
                 1,  //13
-                -1  //14
+                -1, //14
+                -2  //15
             };
 
             //BubbleSort.Sort(MyArray);
