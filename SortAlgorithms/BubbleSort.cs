@@ -34,7 +34,6 @@ namespace SortAlgorithms
             {
                 throw new InvalidOperationException("Количество элементов массива должно быть больше одного");
             }
-            
         }
 
         /// <summary>
@@ -50,7 +49,7 @@ namespace SortAlgorithms
                 SecondBubble = FirstBubble;
                 FirstBubble = temp;
                 WasReversed = true;
-            }            
+            }
         }
     }
 }

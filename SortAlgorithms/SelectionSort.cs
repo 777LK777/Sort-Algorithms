@@ -29,7 +29,7 @@ namespace SortAlgorithms
                     Reverse(ref MyArray[i], ref MyArray[Index]);
                 }
             }
-        }        
+        }
 
         static private void Reverse(ref int FirstValue, ref int SecondValue)
         {
